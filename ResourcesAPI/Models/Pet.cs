@@ -18,9 +18,6 @@ namespace ResourcesAPI.Models
 
         [Key]
         public Guid Id { get; } = Guid.NewGuid();
-        [ForeignKey("OwnerId")]
-        [Required]
-        public Guid OwnerId { get; set; }
         [Required]
         public PetSpecies Specie { get; set; }
         [Required]
